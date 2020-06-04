@@ -1,0 +1,47 @@
+package EjerciciosClase2;
+
+import java.util.Scanner;
+
+public class dados {
+	private static Scanner teclado;
+	private static String tecla;
+	private static int controlador;
+
+	public static void main(String[] args) {
+		teclado= new Scanner(System.in);
+		System.out.println("Presione una tecla para comenzar");
+		tecla=teclado.next();
+		if (!tecla.isEmpty()) {
+			comenzar();
+		}
+		
+	}
+
+	private static void comenzar() {
+		controlador=0;
+		int dado1,dado2,dado3;
+		while(controlador!=1) {
+			System.out.println("Lanza los dados");
+			tecla=teclado.next();
+			if (!tecla.isEmpty()) {
+				dado1=lanzardado();
+				dado2=lanzardado();
+				dado3=lanzardado();
+				System.out.println("Dado1: "+dado1+"Dado 2: "+dado2+"Dado 3: "+dado3);
+				if(dado1==dado2 && dado1==dado3) {
+					System.out.println("Has ganado");
+					controlador=1;
+				}else {
+					System.out.println("Has perdido");
+				}
+			}
+		}		
+	}
+
+	private static int lanzardado() {
+		int num=(int)(Math.random()*6+1);
+		return num;
+		
+	}
+
+}

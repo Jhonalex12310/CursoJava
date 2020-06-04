@@ -1,0 +1,36 @@
+package EjerciciosClase1;
+
+import java.util.Scanner;
+
+/**
+ * 
+ * 	@author Jhonattan
+ *	@version 1
+ *	@Ejercicio 1 Taller 1
+ */
+
+public class Ejercicio1 {
+	private static Scanner teclado;
+	private static int num1;
+	private static int num2;
+	private static int num3;
+	private static int num4;
+	private static int suma;
+	private static int multi;		
+
+	public static void main(String[] args) {
+		teclado = new Scanner(System.in);
+		System.out.println("Ingrese por favor el primer número: ");
+		num1= teclado.nextInt();
+		System.out.println("Ingrese por favor el segundo número: ");
+		num2= teclado.nextInt();
+		System.out.println("Ingrese por favor el tercer número: ");
+		num3= teclado.nextInt();
+		System.out.println("Ingrese por favor el cuarto número: ");
+		num4= teclado.nextInt();
+		suma=num1+num2;
+		multi=num3*num4;
+		System.out.println("La suma de los dos primeros números es: "+suma);
+		System.out.println("La multiplicación de los otros dos números es: "+multi);
+	}
+}
