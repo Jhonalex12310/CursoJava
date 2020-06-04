@@ -1,0 +1,25 @@
+package JavaClase2;
+
+import java.util.Scanner;
+
+public class Clase2 {
+
+	public static void main(String[] args) {
+		Scanner capturar;
+		String nombre;
+		int edad;
+		capturar=new Scanner(System.in);
+		System.out.println("Digite sun nombre");
+		nombre=capturar.nextLine();
+		System.out.println("Bienvenido "+nombre );
+		System.out.println("Digite su edad");
+		edad=capturar.nextInt();
+		if(edad <19) {
+			System.out.println("Menor de edad");
+		}else {
+			System.out.println("Mayor de edad");
+		}
+
+	}
+
+}

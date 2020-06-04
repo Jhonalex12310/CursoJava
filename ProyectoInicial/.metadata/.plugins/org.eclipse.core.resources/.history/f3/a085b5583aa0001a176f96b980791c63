@@ -1,0 +1,27 @@
+package EjerciciosClase2;
+
+public class Operaciones {
+	private int num1;
+	private int num2;
+	private int sum,resta,multi,div;
+	public Operaciones(int num1,int num2) {
+		this.num1=num1;
+		this.num2=num2;
+		this.suma();
+		this.resta();
+		this.multi();
+		this.div();
+	}
+	private void div() {
+		this.div=this.num1/this.num2;		
+	}
+	private void multi() {
+		this.multi=this.num1*this.num2;
+	}
+	private void resta() {
+		this.resta=this.num1-this.num2;
+	}
+	private void suma() {
+		this.sum=this.num1+this.num2;
+	}
+}

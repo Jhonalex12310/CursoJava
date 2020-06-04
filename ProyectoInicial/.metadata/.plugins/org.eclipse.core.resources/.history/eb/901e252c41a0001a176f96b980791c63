@@ -1,0 +1,26 @@
+package EjerciciosClase2;
+
+/**
+ * 
+ * 	@author Jhonattan
+ *	@version 1
+ *	@Ejercicio 2 Taller 2
+ */
+public class Socio {
+	private String nombre;
+	private int antiguedad;
+	
+	public Socio(String name, int antig) {
+		this.nombre=name;
+		this.antiguedad=antig;
+	}
+	
+	public int antiguedad() {
+		return this.antiguedad;
+	}
+	public String socio() {
+		return this.nombre;
+	}
+
+
+}
