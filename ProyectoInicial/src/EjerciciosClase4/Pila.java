@@ -8,7 +8,7 @@ public class Pila {
 
 	public static void main(String[] args) {
 		Stack<persona> pila = new Stack<persona>();
-		cantidad=(int) Math.floor(Math.random()*50+5);
+		cantidad=(int) Math.floor(Math.random()*50+5); 
 		for(int a =0;a< cantidad; a++) {
 			int valor = (int) Math.floor(Math.random()*60+5);
 			precio=calcularprecio(valor);
