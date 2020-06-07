@@ -1,7 +1,7 @@
 package EjerciciosClase4;
 
 public class persona {
-private int edad;
+	private int edad;
     
     /**
      * Constructor por defecto
