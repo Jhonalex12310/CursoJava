@@ -17,7 +17,6 @@ public class Pila {
 	        System.out.println("Visitante número "+(a+1)+" tiene "+valor+" años y paga: $"+precio);
 		}
         while (!pila.isEmpty()) { 
-            //System.out.println(pila.pop().getEdad());
         	total=total+pila.pop().getPrecio();
         }
         System.out.println("El total de venta es: $"+total+ " para una cantidad de "+cantidad+ " de personas");
